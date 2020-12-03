@@ -21,6 +21,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  pointer-events: none;
 }
 .xmas [class*="videoListItem--"] {
   text-align: center;
@@ -31,6 +32,11 @@
 .xmas [class*="videoContainer--"] video {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.xmas [class*="info--"] {
+  left: 24px;
+  bottom: 16px;
+  right: 14px;
 }
 
 .xmas6 [class*="videoList--"] {
