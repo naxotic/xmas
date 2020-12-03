@@ -1,10 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
-.debug-info {
+.xmas .debug-info {
   white-space: nowrap;
-  padding: .25em 0;
+  padding: 0.25em 0;
   position: relative;
   top: 70%;
   left: 0;
@@ -12,13 +8,11 @@
   -webkit-transform: translate3d(-50%);
           transform: translate3d(-50%);
 }
-
-[class*="videoList--"] {
+.xmas [class*="videoList--"] {
   position: relative;
   display: grid;
-  width: 700px;
 }
-[class*="videoList--"]:before {
+.xmas [class*="videoList--"]:before {
   content: "";
   z-index: 10;
   background-size: 100%;
@@ -28,44 +22,29 @@
   right: 0;
   bottom: 0;
 }
-.xmas7 [class*="videoList--"] {
-  grid-template-columns: repeat(14, 1fr) !important;
-  grid-template-rows: repeat(3, 1fr) !important;
-  height: 460px;
-}
-.xmas7 [class*="videoList--"]:before {
-  background-image: url("https://files.slack.com/files-pri/T0D0092H2-F01G3351JTD/themuppetshow_odd_20.png?pub_secret=a06f29e767");
-}
-.xmas6 [class*="videoList--"] {
-  grid-template-columns: repeat(12, 1fr) !important;
-  grid-template-rows: repeat(3, 1fr) !important;
-  height: 535px;
-}
-.xmas6 [class*="videoList--"]:before {
-  background-image: url("https://files.slack.com/files-pri/T0D0092H2-F01FN0S5ME3/themuppetshow_odd.png?pub_secret=c134a713ad");
-}
-
-[class*="videoListItem--"] {
+.xmas [class*="videoListItem--"] {
   text-align: center;
   width: 100%;
   grid-column: span 2;
+  background: red;
 }
-.xmas6 [class*="videoListItem--"]:nth-child(17) ~ div {
-  display: none;
-}
-.xmas7 [class*="videoListItem--"]:nth-child(20) ~ div {
-  display: none;
-}
-
-[class*="videoContainer--"] video {
+.xmas [class*="videoContainer--"] video {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-[class*="info--"] {
+.xmas6 [class*="videoList--"] {
+  grid-template-columns: repeat(12, 1fr) !important;
+  grid-template-rows: repeat(3, 1fr) !important;
+  width: 1000px !important;
+  height: 765px !important;
+}
+.xmas6 [class*="videoList--"]:before {
+  background-image: url("https://files.slack.com/files-pri/T0D0092H2-F01FN0S5ME3/themuppetshow_odd.png?pub_secret=c134a713ad");
+}
+.xmas6 [class*="videoListItem--"]:nth-child(17) ~ div {
   display: none;
 }
-
 .xmas6 [class*="videoListItem--"]:nth-child(7) {
   grid-column: 2 / span 2;
 }
@@ -73,6 +52,18 @@
   grid-column: 1 / span 2;
 }
 
+.xmas7 [class*="videoList--"] {
+  grid-template-columns: repeat(14, 1fr) !important;
+  grid-template-rows: repeat(3, 1fr) !important;
+  width: 1000px !important;
+  height: 657px !important;
+}
+.xmas7 [class*="videoList--"]:before {
+  background-image: url("https://files.slack.com/files-pri/T0D0092H2-F01G3351JTD/themuppetshow_odd_20.png?pub_secret=a06f29e767");
+}
+.xmas7 [class*="videoListItem--"]:nth-child(20) ~ div {
+  display: none;
+}
 .xmas7 [class*="videoListItem--"]:nth-child(8) {
   grid-column: 2 / span 2;
 }
